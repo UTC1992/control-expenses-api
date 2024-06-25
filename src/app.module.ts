@@ -5,6 +5,7 @@ import { ExpensesModule } from './modules/expenses/expenses.module';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { UsersModule } from './modules/users/users.module';
 import { ProjectsModule } from './modules/projects/projects.module';
+import { ExpensesTypeModule } from './modules/expenses-type/expenses-type.module';
 
 @Module({
   imports: [
@@ -21,6 +22,7 @@ import { ProjectsModule } from './modules/projects/projects.module';
     ExpensesModule,
     UsersModule,
     ProjectsModule,
+    ExpensesTypeModule,
   ],
   controllers: [AppController],
   providers: [AppService],
